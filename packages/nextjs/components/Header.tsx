@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { SwitchTheme } from "./SwitchTheme";
 import { Bars3Icon, SparklesIcon } from "@heroicons/react/24/outline";
-import { RainbowKitCustomConnectButton } from "~~/components/scaffold-eth";
+import { FaucetButton, RainbowKitCustomConnectButton } from "~~/components/scaffold-eth";
 import { useOutsideClick } from "~~/hooks/scaffold-eth";
 
 const NavLink = ({ href, children }: { href: string; children: React.ReactNode }) => {
@@ -86,6 +86,7 @@ export const Header = () => {
       <div className="navbar-end flex-grow space-x-6 mr-4">
         <SwitchTheme className="pointer-events-auto" />
         <RainbowKitCustomConnectButton />
+        <FaucetButton />
       </div>
     </div>
   );
