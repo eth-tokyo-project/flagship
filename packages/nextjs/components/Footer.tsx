@@ -1,6 +1,6 @@
 import { hardhat } from "wagmi/chains";
 import { CurrencyDollarIcon } from "@heroicons/react/24/outline";
-import { HeartIcon } from "@heroicons/react/24/outline";
+//import { HeartIcon } from "@heroicons/react/24/outline";
 import { SwitchTheme } from "~~/components/SwitchTheme";
 import { Faucet } from "~~/components/scaffold-eth";
 import { useAppStore } from "~~/services/store/store";
@@ -42,17 +42,7 @@ export const Footer = () => {
               </a>
             </div>
             <span>·</span>
-            <div>
-              Built with <HeartIcon className="inline-block h-4 w-4" /> at 🏰{" "}
-              <a
-                href="https://buidlguidl.com/"
-                target="_blank"
-                rel="noreferrer"
-                className="underline underline-offset-2"
-              >
-                BuidlGuidl
-              </a>
-            </div>
+
             <span>·</span>
             <div>
               <a
