@@ -34,17 +34,17 @@ module.exports = {
       },
       {
         scaffoldEthDark: {
-          primary: "#212638",
+          primary: "#232323",
           "primary-content": "#F9FBFF",
-          secondary: "#2A3655",
+          secondary: "#151515",
           "secondary-content": "#F9FBFF",
           accent: "#4969A6",
           "accent-content": "#F9FBFF",
           neutral: "#F9FBFF",
           "neutral-content": "#385183",
-          "base-100": "#385183",
-          "base-200": "#2A3655",
-          "base-300": "#212638",
+          "base-100": "#101010",
+          "base-200": "#151515",
+          "base-300": "#191919",
           "base-content": "#F9FBFF",
           info: "#385183",
           success: "#34EEB6",
@@ -91,7 +91,7 @@ module.exports = {
     // Extend Tailwind classes (e.g. font-bai-jamjuree, animate-grow)
     extend: {
       fontFamily: {
-        "bai-jamjuree": ["Bai Jamjuree", "sans-serif"],
+        Inter: ["Inter", "sans-serif"],
       },
       keyframes: {
         grow: {

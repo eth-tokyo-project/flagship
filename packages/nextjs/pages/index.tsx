@@ -11,7 +11,7 @@ const Home: NextPage = () => {
         <meta name="description" content="Created with 🏗 scaffold-eth" />
       </Head>
 
-      <div className="flex items-center flex-col flex-grow pt-10">
+      <div className="flex bg-base-100 items-center flex-col flex-grow pt-10">
         <div className="px-5">
           <h1 className="text-center mb-8">
             <span className="block text-2xl mb-2">Welcome to</span>
@@ -27,9 +27,9 @@ const Home: NextPage = () => {
           </p>
         </div>
 
-        <div className="flex-grow bg-base-300 w-full mt-16 px-8 py-12">
+        <div className="flex-grow bg-base-100 w-full mt-16 px-8 py-12">
           <div className="flex justify-center items-center gap-12 flex-col sm:flex-row">
-            <div className="flex flex-col bg-base-100 px-10 py-10 text-center items-center max-w-xs rounded-3xl">
+            <div className="flex flex-col bg-base-200 px-10 py-10 text-center items-center max-w-xs rounded-3xl">
               <BugAntIcon className="h-8 w-8 fill-secondary" />
               <p>
                 Tinker with your smart contract using the{" "}
@@ -39,7 +39,7 @@ const Home: NextPage = () => {
                 tab.
               </p>
             </div>
-            <div className="flex flex-col bg-base-100 px-10 py-10 text-center items-center max-w-xs rounded-3xl">
+            <div className="flex flex-col bg-base-200 px-10 py-10 text-center items-center max-w-xs rounded-3xl">
               <SparklesIcon className="h-8 w-8 fill-secondary" />
               <p>
                 Experiment with{" "}

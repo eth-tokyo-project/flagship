@@ -53,7 +53,7 @@ export const Header = () => {
   );
 
   return (
-    <div className="sticky lg:static top-0 navbar bg-base-100 min-h-0 flex-shrink-0 justify-between z-20 shadow-md shadow-secondary">
+    <div className="sticky lg:static top-0 navbar bg-base-100 h-20 flex-shrink-0 justify-between z-20 shadow-md shadow-secondary">
       <div className="navbar-start w-auto lg:w-1/2">
         <div className="lg:hidden dropdown" ref={burgerMenuRef}>
           <button
@@ -77,11 +77,13 @@ export const Header = () => {
           )}
         </div>
         <Link href="/" passHref className="hidden lg:flex items-center gap-2 ml-4 mr-6">
-          <div className="flex relative w-44 h-10">
+          <div className="flex relative w-44 h-8">
             <Image alt="Flagship logo" className="cursor-pointer" fill src="/flagship.svg" />
           </div>
         </Link>
-        <ul className="hidden lg:flex lg:flex-nowrap menu menu-horizontal px-1 gap-2">{navLinks}</ul>
+        <ul className="hidden text-gray-600 font-bold lg:flex lg:flex-nowrap menu menu-horizontal px-1 gap-2">
+          {navLinks}
+        </ul>
       </div>
       <div className="navbar-end flex-grow space-x-6 mr-4">
         <SwitchTheme className="pointer-events-auto" />
