@@ -16,3 +16,6 @@
 [submodule "packages/forge/lib/openzeppelin-contracts"]
 	path = packages/forge/lib/openzeppelin-contracts
 	url = https://github.com/openzeppelin/openzeppelin-contracts
+[submodule "packages/ui-svelte"]
+	path = packages/ui-svelte
+	url = https://github.com/eth-tokyo-project/ui-svelte.git
