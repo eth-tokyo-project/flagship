@@ -2,8 +2,10 @@
 pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
+
 import {Badges1155} from "src/Badges1155.sol";
 import {ChallengeManager} from "src/challenges/ChallengeManager.sol";
+
 import {FactoryGuessTheNumberChallenge} from "src/challenges/CTE/Lottery1.sol";
 
 import {ECDSA} from "openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol";

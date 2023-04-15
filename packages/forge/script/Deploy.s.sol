@@ -9,7 +9,7 @@ import {FactoryGuessTheSecretNumberChallenge} from "src/challenges/CTE/Lottery2.
 import {FactoryGuessTheRandomNumberChallenge} from "src/challenges/CTE/Lottery3.sol";
 
 contract DeployScript is Script {
-    // this is defined in  lib/forge-std/src/Base.sol:30:5:
+    // this is defined in lib/forge-std/src/Base.sol:30:5:
     // CREATE2_FACTORY = 0x4e59b44847b379578588920cA78FbF26c0B4956C;
 
 
@@ -29,7 +29,7 @@ contract DeployScript is Script {
         Badges1155 _badge = new Badges1155();
         badge = address(_badge);
 
-        // lets add the minter, replace with a real address
+        // lets add the minter, replace with a real address - address to create signatures
         _badge.addMinter(0xbAd10f26d17276F6CA39dAdf397A398394570FE8 /*makeAddr("minter")*/);
 
         // lets deploy the challenge manager
@@ -44,7 +44,7 @@ contract DeployScript is Script {
         TODO create 2
         
         bytes32 salt = 0x29A;
-        bytes memory data = bytes.concat(salt, FactoryGuessTheNumberChallenge.creationCode);
+        bytes memory data = bytes.concat(salt, FactoryGuessTheNumberChallenge.creationCode)l'liu7654;
         CREATE2_FACTORY.call(data);
         console2.logBytes(address(0xc0fFeE0925e2b93b24eF8B2f7C2adE3dd15Ee8e8).code);
         */
