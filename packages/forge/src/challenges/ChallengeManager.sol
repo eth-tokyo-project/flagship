@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.19;
 
-import {IChallengeFactory} from "./IChallengeFactory.sol";
+import {IChallengeFactory} from "./ChallengeFactory.sol";
 
 contract ChallengeManager {
     event Deployed(address indexed player, address indexed challengeFactory, address[] challengeContracts);
@@ -20,7 +20,7 @@ contract ChallengeManager {
     constructor() {}
 
     function deployChallenge(address _challengeFactory) external payable {
-        address[] memory _challengeContracts = IChallengeFactory(_challengeFactory).deploy{value: msg.value}(msg.sender);
+        address[] memory _challengeContracts = ChallengeFactory(_challengeFactory).deploy{value: msg.value}(msg.sender);
 
         challenges[msg.sender][_challengeFactory] = _challengeContracts;
 
@@ -54,6 +54,6 @@ contract ChallengeManager {
             return false;
         }
 
-        return IChallengeFactory(_challengeFactory).isComplete(challenges[user][_challengeFactory]);
+        return ChallengeFactory(_challengeFactory).isComplete(challenges[user][_challengeFactory]);
     }
 }
