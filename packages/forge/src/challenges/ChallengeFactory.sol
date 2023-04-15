@@ -1,9 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-/// @title Interface for CTF organisers to use when creating a singular challenge level factory.
+import {IChallengeFactory} from 'src/challenges/IChallengeFactory.sol';
+
+/// @title Partially implemented Interface for CTF organisers to use when creating a singular challenge level factory.
 ///        The factory deploys a fresh version of the level per player.
-abstract contract ChallengeFactory {
+abstract contract ChallengeFactory is IChallengeFactory {
     // @notice create challenges contract
     function deploy(address player) external payable virtual returns (address[] memory);
     
