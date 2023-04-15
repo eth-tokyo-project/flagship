@@ -6,3 +6,6 @@
 [submodule "packages/forge/lib/solady"]
 	path = packages/forge/lib/solady
 	url = https://github.com/vectorized/solady
+[submodule "packages/forge/lib/solmate"]
+	path = packages/forge/lib/solmate
+	url = https://github.com/transmissions11/solmate
