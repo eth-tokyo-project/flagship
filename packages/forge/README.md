@@ -86,7 +86,21 @@
 
 ## Polygon ZK EVM
 
-
+"badge": {
+    "https://testnet-zkevm.polygonscan.com/address/0xa1324f953e8e75a09593Ed7473722690cC624D54"
+},
+"challengeManager": {
+    "https://testnet-zkevm.polygonscan.com/address/0xB40144707F71e3e132327F528263aFB0bA458821"
+},
+"challenge1": {
+    "https://testnet-zkevm.polygonscan.com/address/0x4eE2ad8a12E6D5b272994bF2393aF5D0332Acc86"
+},
+"challenge2": {
+    "https://testnet-zkevm.polygonscan.com/address/0x84AD75721aE069C3056d4577F687E51Da1F61a20"
+},
+"challenge3": {
+    "https://testnet-zkevm.polygonscan.com/address/0x7DFeDC5D8376f2fC882d58dD4F64e8008024bAba"
+}
 
 
 
