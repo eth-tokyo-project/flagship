@@ -56,9 +56,32 @@
 
 ## Scroll
 
+<table>
 
+<tr>
+<th>Contract</th>
+<th>Address</th>
+</tr>
+
+<tr>
+<td>badge</td>
+<td>https://blockscout.scroll.io/address/0xa1324f953e8e75a09593Ed7473722690cC624D54</td>
+</tr>
+
+<tr>
+<td>challengeManager</td>
+<td>https://blockscout.scroll.io/address/0xB40144707F71e3e132327F528263aFB0bA458821</td>
+</tr>
+
+<tr>
+<td>challenge1</td>
+<td>https://blockscout.scroll.io/address/0x4eE2ad8a12E6D5b272994bF2393aF5D0332Acc86</td>
+</tr>
+
+</table>
 
 ## Celo
+
 
 
 ## Polygon ZK EVM
